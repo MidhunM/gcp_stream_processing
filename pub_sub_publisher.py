@@ -2,7 +2,7 @@ from google.cloud import pubsub_v1
 import pandas as pd
 import json
 
-project_id = "serene-star-373712"
+project_id = ""
 topic_id = "stock_topic"
 
 publisher = pubsub_v1.PublisherClient()

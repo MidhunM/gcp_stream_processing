@@ -7,7 +7,7 @@ import pandas as pd
 import json
 import datetime
 
-PROJECT = 'serene-star-373712'
+PROJECT = ''
 BUCKET  = 'pub_sub_gcp_bucket'
 
 class Parse(beam.DoFn):
@@ -43,7 +43,7 @@ def run():
       | 'ReadFromGCS' >> beam.io.textio.ReadFromText('gs://{0}/stock_data.json'.format(BUCKET))
       | 'ParseCSV' >> beam.ParDo(Parse())
       | 'WriteToBigTable' >> WriteToBigTable(project_id  = PROJECT,
-                                             instance_id = 'serene-star-373712',
+                                             instance_id = '',
                                              table_id    = 'stock_info')
    )
 

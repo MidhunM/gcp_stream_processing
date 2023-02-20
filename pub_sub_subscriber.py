@@ -4,7 +4,7 @@ from google.cloud import storage
 import json
 
 
-project_id      = "serene-star-373712"
+project_id      = ""
 subscription_id = "stock_topic-sub"
 timeout = 5.0
 

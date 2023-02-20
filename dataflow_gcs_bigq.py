@@ -7,7 +7,7 @@ import pandas as pd
 import json
 
 
-PROJECT = 'serene-star-373712'
+PROJECT = ''
 BUCKET  = 'pub_sub_gcp_bucket'
 schema  = 'Index:string,Date:string,Open:float,High:float,Low:float,Close:float,Adj_Close:float,Volume:float,CloseUSD:float'
 
